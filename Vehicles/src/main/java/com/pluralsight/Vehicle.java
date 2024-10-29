@@ -11,6 +11,19 @@ public class Vehicle {
     private boolean isManual;
     private float speedCurrent;
 
+    public Vehicle(String color, int numberOfPassenger, int cargoCapacity, int fuelCapacity, String vehicleType, boolean isGasoline, boolean isElectric, boolean isManual, float speedCurrent, float speedMax) {
+        this.color = color;
+        this.numberOfPassenger = numberOfPassenger;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.vehicleType = vehicleType;
+        this.isGasoline = isGasoline;
+        this.isElectric = isElectric;
+        this.isManual = isManual;
+        this.speedCurrent = speedCurrent;
+        this.speedMax = speedMax;
+    }
+
     public float getSpeedMax() {
         return speedMax;
     }

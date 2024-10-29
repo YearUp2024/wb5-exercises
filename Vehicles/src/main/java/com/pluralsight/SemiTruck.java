@@ -5,6 +5,12 @@ public class SemiTruck extends Vehicle{
     private boolean hasTailer;
     private float cargoWeight;
 
+    public SemiTruck(String cargo, boolean hasTailer, float cargoWeight) {
+        this.cargo = cargo;
+        this.hasTailer = hasTailer;
+        this.cargoWeight = cargoWeight;
+    }
+
     public String getCargo() {
         return cargo;
     }

@@ -4,6 +4,11 @@ public class Hovercraft extends Vehicle{
     private boolean onWater;
     private float hoverHeight;
 
+    public Hovercraft(boolean onWater, float hoverHeight) {
+        this.onWater = onWater;
+        this.hoverHeight = hoverHeight;
+    }
+
     public boolean isOnWater() {
         return onWater;
     }
