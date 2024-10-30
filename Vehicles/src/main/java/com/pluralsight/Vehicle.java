@@ -1,17 +1,19 @@
 package com.pluralsight;
 
 public class Vehicle {
-    private String color;
-    private int numberOfPassenger;
-    private int cargoCapacity;
-    private int fuelCapacity;
-    private String vehicleType;
-    private boolean isGasoline;
-    private boolean isElectric;
-    private boolean isManual;
-    private float speedCurrent;
+    protected String color;
+    protected int numberOfPassenger;
+    protected int cargoCapacity;
+    protected int fuelCapacity;
+    protected String vehicleType;
+    protected boolean isGasoline;
+    protected boolean isElectric;
+    protected boolean isManual;
+    protected float speedCurrent;
 
-    public Vehicle(String color, int numberOfPassenger, int cargoCapacity, int fuelCapacity, String vehicleType, boolean isGasoline, boolean isElectric, boolean isManual, float speedCurrent, float speedMax) {
+    protected Vehicle(){}
+
+    protected Vehicle(String color, int numberOfPassenger, int cargoCapacity, int fuelCapacity, String vehicleType, boolean isGasoline, boolean isElectric, boolean isManual, float speedCurrent, float speedMax) {
         this.color = color;
         this.numberOfPassenger = numberOfPassenger;
         this.cargoCapacity = cargoCapacity;
@@ -24,7 +26,7 @@ public class Vehicle {
         this.speedMax = speedMax;
     }
 
-    public float getSpeedMax() {
+    protected float getSpeedMax() {
         return speedMax;
     }
 
